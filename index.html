@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Prayer Times</h1>
+        <div class="date-time">
+            <div id="current-date"></div>
+            <div id="current-time"></div>
+        </div>
+    </header>
+
+    <div class="location-selector">
+        <label for="city">Location:</label>
+        <select id="city">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+            <option value="Makassar">Makassar</option>
+            <option value="Medan">Medan</option>
+            <option value="Palembang">Palembang</option>
+        </select>
+    </div>
+
+    <div class="prayer-times-container">
+        <div class="prayer-card" id="fajr">
+            <div class="prayer-name">Fajr</div>
+            <div class="prayer-time" id="fajr-time">--:--</div>
+        </div>
+        <div class="prayer-card" id="dhuhr">
+            <div class="prayer-name">Dhuhr</div>
+            <div class="prayer-time" id="dhuhr-time">--:--</div>
+        </div>
+        <div class="prayer-card" id="asr">
+            <div class="prayer-name">Asr</div>
+            <div class="prayer-time" id="asr-time">--:--</div>
+        </div>
+        <div class="prayer-card" id="maghrib">
+            <div class="prayer-name">Maghrib</div>
+            <div class="prayer-time" id="maghrib-time">--:--</div>
+        </div>
+        <div class="prayer-card" id="isha">
+            <div class="prayer-name">Isha</div>
+            <div class="prayer-time" id="isha-time">--:--</div>
+        </div>
+    </div>
+
+    <div class="next-prayer">
+        <h2>Next Prayer</h2>
+        <div id="next-prayer-name">Loading...</div>
+        <div id="next-prayer-time">--:--</div>
+        <div id="time-remaining">--:--:--</div>
+    </div>
+
+    <footer>
+        <p>Prayer times are calculated based on geographical coordinates and may vary slightly.</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
